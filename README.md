@@ -1,2 +1,3 @@
-# utils
-some function
+# shanks-utils
+
+some common function
