@@ -7,6 +7,7 @@
     "lint": "eslint --max-warnings 10 .",
     "lint:fix": "npm run lint -- --fix",
     "test": "cross-env NODE_ENV=test && nyc ava --verbose",
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
     "report": "nyc report --reporter=html"
   },
   "keywords": [
@@ -51,19 +52,26 @@
     "rollup": "^0.52.0",
     "rollup-plugin-babel": "^3.0.2",
     "rollup-plugin-node-resolve": "^3.0.0",
-    "rollup-plugin-uglify": "^2.0.1"
+    "rollup-plugin-uglify": "^2.0.1",
+    "yargs": "^10.0.3"
   },
   "ava": {
-		"files": [
-			"test/**/*.spec.js"
-		]
-	},
+    "files": [
+      "test/**/*.spec.js"
+    ],
+    "babel": "inherit",
+    "require": [
+      "babel-register"
+    ]
+  },
   "nyc": {
     "require": [
       "babel-register"
     ],
+    "sourceMap": false,
+    "instrument": false,
     "include": [
-      "src/**/*.js"
+      "lib/*.js"
     ]
   }
 }
