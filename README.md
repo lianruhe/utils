@@ -1,6 +1,9 @@
 # shanks-utils
 
+[![Build Status](https://travis-ci.org/lianruhe/utils.svg?branch=master)](https://travis-ci.org/lianruhe/utils)
 [![Coverage Status](https://coveralls.io/repos/github/lianruhe/utils/badge.svg?branch=master)](https://coveralls.io/github/lianruhe/utils?branch=master)
+[![bitHound Dev Dependencies](https://www.bithound.io/github/lianruhe/utils/badges/devDependencies.svg)](https://www.bithound.io/github/lianruhe/utils/master/dependencies/npm)
+[![bitHound Overall Score](https://www.bithound.io/github/lianruhe/utils/badges/score.svg)](https://www.bithound.io/github/lianruhe/utils)
 
 > some common function
 
