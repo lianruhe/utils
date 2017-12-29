@@ -2,13 +2,14 @@
   "name": "shanks-utils",
   "version": "0.0.1",
   "description": "some common function",
-  "main": "index.js",
+  "main": "dist/bundle.min.js",
   "scripts": {
     "lint": "eslint --max-warnings 10 .",
     "lint:fix": "npm run lint -- --fix",
-    "test": "cross-env NODE_ENV=test && nyc ava --verbose",
+    "test": "cross-env NODE_ENV=test nyc ava --verbose",
     "coveralls": "nyc report --reporter=text-lcov | coveralls",
-    "report": "nyc report --reporter=html"
+    "report": "nyc report --reporter=html",
+    "build": "cross-env NODE_ENV=production rollup -c"
   },
   "keywords": [
     "shanks",
@@ -29,6 +30,7 @@
     "babel-eslint": "^8.0.1",
     "babel-loader": "^7.1.2",
     "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-external-helpers": "^6.22.0",
     "babel-plugin-istanbul": "^4.1.5",
     "babel-plugin-syntax-dynamic-import": "^6.18.0",
     "babel-plugin-transform-class-properties": "^6.24.1",
@@ -50,7 +52,7 @@
     "eslint-plugin-standard": "^3.0.1",
     "nyc": "^11.3.0",
     "rollup": "^0.53.0",
-    "rollup-plugin-babel": "^3.0.2",
+    "rollup-plugin-babel": "^3.0.3",
     "rollup-plugin-node-resolve": "^3.0.0",
     "rollup-plugin-uglify": "^2.0.1",
     "yargs": "^10.0.3"

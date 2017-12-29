@@ -16,7 +16,7 @@ $ npm install --save shanks-utils
 
 ## Usage
 
-- **list :arrow_right: tree**
+### list :arrow_right: tree
 ```js
 
 import { list2tree } from 'shanks-utils'

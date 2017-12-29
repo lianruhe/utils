@@ -1,8 +1,5 @@
-// import test from 'ava'
-const test = require('ava')
-// import { list2tree } from '../src'
-const utils = require('../')
-const { list2tree } = utils
+import test from 'ava'
+import { list2tree } from '../index'
 
 test('list2tree: no params', async t => {
   const result = list2tree()

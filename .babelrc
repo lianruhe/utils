@@ -46,7 +46,8 @@
             "ie9": true,
             "chrome": 42
           },
-          "forceAllTransforms": true
+          "forceAllTransforms": true,
+          "modules": false
         }]
       ],
       "plugins": [
@@ -54,7 +55,8 @@
         "syntax-dynamic-import",
         "transform-class-properties",
         "transform-object-rest-spread",
-        "transform-runtime"
+        "transform-runtime",
+        "external-helpers"
        ],
        "comments": false
     }
