@@ -61,6 +61,9 @@
     "files": [
       "test/**/*.spec.js"
     ],
+    "source": [
+      "lib/**/*.js"
+    ],
     "babel": "inherit",
     "require": [
       "babel-register"
@@ -73,7 +76,7 @@
     "sourceMap": false,
     "instrument": false,
     "include": [
-      "lib/*.js"
+      "lib/**/*.js"
     ]
   }
 }

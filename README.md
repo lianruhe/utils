@@ -7,7 +7,7 @@
 [![Build Status](https://travis-ci.org/lianruhe/utils.svg?branch=master)](https://travis-ci.org/lianruhe/utils)
 [![Coverage Status](https://coveralls.io/repos/github/lianruhe/utils/badge.svg?branch=master)](https://coveralls.io/github/lianruhe/utils?branch=master)
 
-> some common function
+> 一些常用的方法总结
 
 ## Install
 
@@ -17,7 +17,18 @@ $ npm install --save shanks-utils
 
 ## Usage
 
-### list :arrow_right: tree
+### list2tree 列表数据构造嵌套数据
+
+```js
+/**
+ * @param  {Array}  list                              列表数据类型
+ * @param  {String} [selfKey = 'id']                  节点 id 字段名称
+ * @param  {String} [parentKey = 'pid']               父节点 id 字段名称
+ * @param  {String} [childrenKey = 'children']        子节点字段名称
+ * @return {Object}                                   嵌套数据类型
+ */
+```
+
 ```js
 
 import { list2tree } from 'shanks-utils'
