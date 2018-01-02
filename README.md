@@ -17,19 +17,18 @@ $ npm install --save shanks-utils
 
 ## Usage
 
-### list2tree 列表数据构造嵌套数据
+### list2tree
 
 ```js
 /**
- * @param  {Array}  list                              列表数据类型
- * @param  {String} [selfKey = 'id']                  节点 id 字段名称
- * @param  {String} [parentKey = 'pid']               父节点 id 字段名称
- * @param  {String} [childrenKey = 'children']        子节点字段名称
- * @return {Object}                                   嵌套数据类型
+ * list2tree 列表数据构造嵌套数据
+ * @param  {Array}  list                                      列表数据类型
+ * @param  {Object} [options]                                 项字段名称自定义配置
+ * @param  {String} [options.selfKey = 'id']                  节点 id 字段名称
+ * @param  {String} [options.parentKey = 'pid']               父节点 id 字段名称
+ * @param  {String} [options.childrenKey = 'children']        子节点字段名称
+ * @return {Object}                                           嵌套数据类型
  */
-```
-
-```js
 
 import { list2tree } from 'shanks-utils'
 
@@ -42,7 +41,9 @@ const listData = [{
   name: 2,
   parentId: 1
 }]
-const treeData = list2tree(listData)
+const treeData = list2tree(listData, {
+  parentKey: 'parentId'
+})
 console.log(treeData)
 // {
 //   id: 1,
