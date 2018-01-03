@@ -1,6 +1,6 @@
 {
   "name": "shanks-utils",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "some common function",
   "main": "dist/bundle.min.js",
   "scripts": {
@@ -53,6 +53,7 @@
     "nyc": "^11.3.0",
     "rollup": "^0.53.0",
     "rollup-plugin-babel": "^3.0.3",
+    "rollup-plugin-commonjs": "^8.2.6",
     "rollup-plugin-node-resolve": "^3.0.0",
     "rollup-plugin-uglify": "^2.0.1",
     "yargs": "^10.0.3"
