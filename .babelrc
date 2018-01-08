@@ -1,64 +1,43 @@
 {
-  "env": {
-    "development": {
-      "presets": [
-        ["env", {
-          "targets": {
-            "ie9": true,
-            "chrome": 42
-          },
-          "forceAllTransforms": false
-        }]
-      ],
-      "plugins": [
-        "add-module-exports",
-        "syntax-dynamic-import",
-        "transform-class-properties",
-        "transform-object-rest-spread",
-        "transform-runtime"
-       ],
-       "comments": false
-    },
-    "test": {
-      "presets": [
-        ["env", {
-          "targets": {
-            "ie9": true,
-            "chrome": 42
-          },
-          "forceAllTransforms": false
-        }]
-      ],
-      "plugins": [
-        "add-module-exports",
-        "syntax-dynamic-import",
-        "transform-class-properties",
-        "transform-object-rest-spread",
-        "transform-runtime",
-        "istanbul"
-       ],
-       "comments": false
-    },
-    "production": {
-      "presets": [
-        ["env", {
-          "targets": {
-            "ie9": true,
-            "chrome": 42
-          },
-          "forceAllTransforms": true,
-          "modules": false
-        }]
-      ],
-      "plugins": [
-        "add-module-exports",
-        "syntax-dynamic-import",
-        "transform-class-properties",
-        "transform-object-rest-spread",
-        "transform-runtime",
-        "external-helpers"
-       ],
-       "comments": false
-    }
+  "presets": [
+    ["env", {
+      "targets": {
+        "ie9": true,
+        "chrome": 42
+      },
+      "forceAllTransforms": true,
+      "modules": false
+    }]
+  ],
+  "plugins": [
+    "add-module-exports",
+    "syntax-dynamic-import",
+    "transform-class-properties",
+    "transform-object-rest-spread",
+    "transform-runtime",
+    "external-helpers"
+   ],
+   "comments": false,
+   "env": {
+      "test": {
+        "presets": [
+          ["env", {
+            "targets": {
+              "ie9": true,
+              "chrome": 42
+            },
+            "forceAllTransforms": false
+          }]
+        ],
+        "plugins": [
+          "add-module-exports",
+          "syntax-dynamic-import",
+          "transform-class-properties",
+          "transform-object-rest-spread",
+          "transform-runtime",
+          "istanbul"
+         ],
+         "comments": false
+     }
   }
 }

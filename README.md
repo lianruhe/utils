@@ -58,8 +58,7 @@ console.log(treeData)
 //   }]
 // }, {
 //   id: 3,
-//   name: 3,
-//   parentId: 'SHANKS_UTILS@@ROOT_PARENT_ID'
+//   name: 3
 // }]
 
 ```
