@@ -10,14 +10,11 @@
     }]
   ],
   "plugins": [
-    "add-module-exports",
-    "syntax-dynamic-import",
-    "transform-class-properties",
-    "transform-object-rest-spread",
     "transform-runtime",
     "external-helpers"
    ],
    "comments": false,
+
    "env": {
       "test": {
         "presets": [
@@ -30,10 +27,6 @@
           }]
         ],
         "plugins": [
-          "add-module-exports",
-          "syntax-dynamic-import",
-          "transform-class-properties",
-          "transform-object-rest-spread",
           "transform-runtime",
           "istanbul"
          ],

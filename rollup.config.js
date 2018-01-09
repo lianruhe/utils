@@ -1,6 +1,6 @@
-import resolve from 'rollup-plugin-node-resolve'
-import commonjs from 'rollup-plugin-commonjs'
 import babel from 'rollup-plugin-babel'
+import commonjs from 'rollup-plugin-commonjs'
+import resolve from 'rollup-plugin-node-resolve'
 import uglify from 'rollup-plugin-uglify'
 
 export default {
@@ -11,12 +11,9 @@ export default {
     file: 'dist/bundle.min.js'
   },
   plugins: [
-    resolve(),
+    babel(),
     commonjs(),
-    babel({
-      // externalHelpers: true,
-      exclude: 'node_modules/**'
-    }),
+    resolve(),
     uglify()
   ]
 }
